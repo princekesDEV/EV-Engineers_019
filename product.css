@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+#products-sidebar {
+  width: 20%;
+}
+
+#relevance{
+  border: 1px solid rgb(200, 200, 200);
+}
+
+#relevance .arrow{
+  color: #e70171;
+}
+
+#product-filters{
+  width: 100%;
+  border: 1px solid rgb(200, 200, 200);
+  margin-top: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.2rem;
+}
+
+.dropdown {
+  font-family: "Noto Sans", sans-serif;
+  width: 100%;
+  padding: 0.7rem;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+.dropdown .arrow {
+  font-weight: 900;
+  font-size: 16px;
+  transition: transform 0.3s;
+}
+
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  display: none;
+  /* position: absolute; */
+  z-index: 1;
+}
+
+.dropdown.active + .dropdown-content {
+  display: block;
+}
+
+.dropdown-content > div {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.dropdown-content > div:hover {
+  background-color: rgb(240, 240, 240);
+}
