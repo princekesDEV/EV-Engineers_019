@@ -17,6 +17,7 @@
   border: 1px solid rgb(200, 200, 200);
   margin-top: 2rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.2rem;
 }
 
 .dropdown {
@@ -48,6 +49,7 @@
   width: 100%;
   box-sizing: border-box;
   display: none;
+  /* position: absolute; */
   z-index: 1;
 }
 
