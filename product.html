@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <div id="products-main">
+      <!--  -->
+      <!--  -->
+      <!-- Products filter Sidebar -->
+      <div id="products-sidebar">
+        <div class="dropdown" id="relevance" onclick="relevance()">
+          <span>Sort By : Relevance</span>
+          <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+
+        <div class="dropdown-content" id="relevance-content">
+          <div>
+            <label for="">Relevance</label>
+            <input type="radio" name="relevance" />
+          </div>
+          <div>
+            <label for="">Discount</label>
+            <input type="radio" name="relevance" />
+          </div>
+          <div><label for="">Name</label> <input type="radio" /></div>
+          <div>
+            <label for="">Customer Top Rated</label>
+            <input type="radio" name="relevance" />
+          </div>
+          <div>
+            <label for="">New Arrivals</label>
+            <input type="radio" name="relevance" />
+          </div>
+          <div>
+            <label for="">Price: High to Low</label>
+            <input type="radio" name="relevance" />
+          </div>
+          <div>
+            <label for="">Price: Low to High</label>
+            <input type="radio" name="relevance" />
+          </div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!-- Brand -->
+        <div class="dropdown" id="Brand">
+          <span>Brand</span>
+          <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+
+        <div class="dropdown-content" id="brand-content">
+          <div>
+            <label for="">Zapvi</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Coverskart</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Metro</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">MVYNO</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">AMYRA</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Mochi</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Balenciaga</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Gucci</label>
+            <input type="checkbox" name="brand" />
+          </div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!-- Price -->
+        <div class="dropdown" id="price">
+          <span>Price</span>
+          <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+
+        <div class="dropdown-content" id="price-content">
+          <div>
+            <label for="">Rs. 0 - Rs. 499</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Rs. 500 - Rs. 999</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Rs. 1000 - Rs. 1499</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Rs. 1500 - Rs. 1999</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Rs. 2000 - Rs. 2999</label>
+            <input type="checkbox" name="brand" />
+          </div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!-- Category -->
+        <div class="dropdown" id="price">
+          <span>Category</span>
+          <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+
+        <div class="dropdown-content" id="category-content">
+          <div>
+            <label for="">Cartoons</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Anime</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Plain</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">Make UP</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">BodyWear</label>
+            <input type="checkbox" name="brand" />
+          </div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!-- Discount -->
+        <div class="dropdown" id="price">
+          <span>Discount</span>
+          <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+
+        <div class="dropdown-content" id="discount-content">
+          <div>
+            <label for="">70% And Above</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">60% And Above</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">50% And Above</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">40% And Above</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">30% And Above</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">20% And Above</label>
+            <input type="checkbox" name="brand" />
+          </div>
+          <div>
+            <label for="">10% And Above</label>
+            <input type="checkbox" name="brand" />
+          </div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!-- Color -->
+        <div class="dropdown" id="price">
+          <span>Color</span>
+          <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+
+        <div class="dropdown-content" id="color-content">
+          <div>
+            <label for=""><i class="fa-solid fa-circle"></i> Black</label>
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: blue"></i>
+              Blue</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: navy"></i>
+              Navyblue</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: green"></i>
+              Green</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: beige"></i>
+              Beige</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: red"></i> Red</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: yellow"></i>
+              Yellow</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: orange"></i>
+              Orange</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: magenta"></i>
+              Magenta</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: skyblue"></i>
+              Skyblue</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: silver"></i>
+              Silver</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: gold"></i>
+              Golden</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i class="fa-solid fa-circle" style="color: gray"></i>
+              Gray</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+          <div>
+            <label for=""
+              ><i
+                class="fa-solid fa-circle"
+                style="
+                  color: white;
+                  border: 1px solid rgb(200, 200, 200);
+                  border-radius: 50%;
+                "
+              ></i>
+              White</label
+            >
+            <input type="checkbox" name="color" />
+          </div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!-- Gender -->
+        <div class="dropdown" id="price">
+          <span>Gender</span>
+          <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+
+        <div class="dropdown-content" id="gender-content">
+          <div>
+            <label for="">Male</label>
+            <input type="radio" name="gender" />
+          </div>
+          <div>
+            <label for="">Female</label>
+            <input type="radio" name="gender" />
+          </div>
+          <div>
+            <label for="">Unisex</label>
+            <input type="radio" name="gender" />
+          </div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!-- Age Group -->
+        <div class="dropdown" id="price">
+          <span>Age Group</span>
+          <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+
+        <div class="dropdown-content" id="age_group-content">
+          <div>
+            <label for="">Children</label>
+            <input type="radio" name="gender" />
+          </div>
+          <div>
+            <label for="">Female</label>
+            <input type="radio" name="gender" />
+          </div>
+          <div>
+            <label for="">Unisex</label>
+            <input type="radio" name="gender" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script
+  src="https://kit.fontawesome.com/e85a0520cd.js"
+  crossorigin="anonymous"
+></script>
+<script src="products-sidebar.js"></script>

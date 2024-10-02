@@ -1,0 +1,56 @@
+#products-sidebar {
+  width: 20%;
+}
+
+.dropdown {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0.5rem;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.dropdown:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dropdown .arrow {
+    font-weight: 900;
+  font-size: 16px;
+  color: #e70171;
+  transition: transform 0.3s;
+}
+
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  background-color: white;
+  width: 100%;
+  /* display: none; */
+  padding: 10px;
+  /* position: absolute; */
+  z-index: 1;
+}
+
+.dropdown.active + .dropdown-content {
+  display: block;
+}
+
+.dropdown-content > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-content > div:hover {
+    background-color: rgb(240, 240, 240);
+}
