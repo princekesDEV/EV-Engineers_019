@@ -1,28 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 #products-sidebar {
   width: 20%;
 }
 
-.dropdown {
+#relevance{
+  border: 1px solid rgb(200, 200, 200);
+}
+
+#relevance .arrow{
+  color: #e70171;
+}
+
+#product-filters{
   width: 100%;
-  margin-top: 20px;
-  padding: 0.5rem;
-  border: 2px solid rgb(200, 200, 200);
-  border-radius: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  margin-top: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dropdown {
+  font-family: "Noto Sans", sans-serif;
+  width: 100%;
+  padding: 0.7rem;
+  border-bottom: 1px solid rgb(200, 200, 200);
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  transition: box-shadow 0.3s;
-}
-
-.dropdown:hover {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-weight: 500;
 }
 
 .dropdown .arrow {
-    font-weight: 900;
+  font-weight: 900;
   font-size: 16px;
-  color: #e70171;
   transition: transform 0.3s;
 }
 
@@ -33,9 +46,8 @@
 .dropdown-content {
   background-color: white;
   width: 100%;
-  /* display: none; */
-  padding: 10px;
-  /* position: absolute; */
+  box-sizing: border-box;
+  display: none;
   z-index: 1;
 }
 
@@ -44,13 +56,16 @@
 }
 
 .dropdown-content > div {
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 0.7rem;
   align-items: center;
-  padding: 8px;
   cursor: pointer;
+  border: 1px solid rgb(200, 200, 200);
 }
 
 .dropdown-content > div:hover {
-    background-color: rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240);
 }
