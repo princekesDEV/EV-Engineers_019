@@ -1,18 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-#products-sidebar {
-  width: 20%;
+#products-main {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem 0.4rem 0rem 0.4rem;
 }
 
-#relevance{
+#products-sidebar {
+  width: 100%;
+  z-index: 1;
+}
+
+#relevance {
   border: 1px solid rgb(200, 200, 200);
 }
 
-#relevance .arrow{
+#relevance .arrow {
   color: #e70171;
 }
 
-#product-filters{
+#product-filters {
   width: 100%;
   border: 1px solid rgb(200, 200, 200);
   margin-top: 2rem;
@@ -70,4 +77,109 @@
 
 .dropdown-content > div:hover {
   background-color: rgb(240, 240, 240);
+}
+
+/* Products-Card CSS */
+
+#products-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#products-cards > div {
+  padding: 1rem 1rem 3rem 1rem;
+  border: 1px solid rgb(200, 200, 200);
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+#products-cards img {
+  width: 100%;
+  margin-bottom: 0.4rem;
+  aspect-ratio: 1/1;
+}
+
+#products-cards h4 {
+  margin-bottom: 0.4rem;
+}
+
+#products-cards p {
+  margin-bottom: 0.4rem;
+}
+
+#products-cards span:nth-child(2){
+  color: gray;
+  font-size: 12px;
+}
+
+.product-card-btn {
+  display: flex;
+  border-top: 1px solid rgb(200, 200, 200);
+  justify-items: flex-end;
+  justify-content: flex-end;
+  display: none;
+  width: 100%;
+}
+
+#products-cards > div:hover .product-card-btn {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+
+.card-fvrt-btn {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e70171;
+  cursor: pointer;
+}
+
+.card-add-to-cart-btn {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #e70171;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1483px) {
+  #products-cards {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1095px) {
+  #products-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 592px) {
+  #products-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 591px) {
+  #products-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #products-main {
+    flex-direction: column;
+  }
 }
