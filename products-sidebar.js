@@ -219,7 +219,7 @@ let bag = [
     description:
       "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
     category: "cars",
-    image: "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+    image: "Assests\\Products\\product-12.png",
     rating: {
       rate: 4.8,
       count: 400,
@@ -333,6 +333,7 @@ let bag = [
 ];
 
 function addProductCards(bag) {
+  document.querySelector("#products-cards").innerHTML = "";
   bag.forEach((elem) => {
     let card = document.createElement("div");
     card.id = "product-card";
@@ -348,7 +349,7 @@ function addProductCards(bag) {
 
     let rating = document.createElement("p");
     rating.innerText = `Rating: ${elem.rating.rate}`;
-    
+
     let star = document.createElement("span");
     star.innerHTML = '<i class="fa-solid fa-star"></i>';
     rating.append(star);
@@ -373,6 +374,29 @@ function addProductCards(bag) {
     card.append(image, title, price, rating, button_fvrt_cont);
     button_fvrt_cont.append(fvrt, add_to_cart_btn);
   });
+}
+
+function tosort() {
+  let select = document.querySelector(
+    'input[name = "relevance"]:checked'
+  ).value;
+
+  if (select == "Low-to-high") {
+    bag.sort((elem1, elem2) => elem1.price - elem2.price);
+  } else if (select == "High-to-low") {
+    bag.sort((elem1, elem2) => elem2.price - elem1.price);
+  }
+  addProductCards(bag);
+}
+
+function search() {
+  let search_value = document.querySelector("#navbar-search").value;
+
+  let new_data = bag.filter((elem) => {
+    return elem.title.toLowerCase().includes(search_value.toLowerCase());
+  });
+
+  addProductCards(new_data);
 }
 
 addProductCards(bag);

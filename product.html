@@ -5,8 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
     <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="homepage.css" />
   </head>
   <body>
+    <!-- header with 3 sub-parts -->
+    <header>
+      <div class="top_header">
+        <p>Festive Deals Await! Shop From Our Durga Pujo Sale Now!</p>
+        <div class="top_header_feature">
+          <div>
+            <i class="fa-solid fa-mobile-screen"></i>
+            <p>Get App</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Store & Events</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-gift"></i>
+            <p>Gift Card</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-circle-question"></i>
+            <p>Help</p>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="nav_left">
+          <ul>
+            <li>
+              <img src="Assests/nykaa-logo.png" alt="Naykaa Logo" />
+              <a href="#">Categories</a>
+              <a href="#">Brands</a>
+              <a href="#">Luxe</a>
+              <a href="#">Naykaa Fashion</a>
+              <a href="#">Beauty Advice</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav_right">
+          <input
+            type="text"
+            placeholder="Search on Naykaa"
+            id="navbar-search"
+            oninput="search()"
+          />
+          <button>Sign In</button>
+          <a href="#"
+            ><i class="fa-solid fa-cart-shopping" style="color: black"></i
+          ></a>
+        </div>
+      </nav>
+      <div class="bottom_header">
+        <ul>
+          <li>
+            <a href="#">Makeup</a>
+            <a href="#">Skin</a>
+            <a href="#">Hair</a>
+            <a href="#">Appliances</a>
+            <a href="#">Bath & Body</a>
+            <a href="#">Natural</a>
+            <a href="#">Mom & Baby</a>
+            <a href="#">Health & Wellness</a>
+            <a href="#">Men</a>
+            <a href="#">Fragrance</a>
+            <a href="#">Lingerie & Accessories</a>
+            <button>Sale</button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <div id="products-main">
       <!--  -->
       <!--  -->
@@ -37,11 +107,21 @@
           </div>
           <div>
             <label for="">Price: High to Low</label>
-            <input type="radio" name="relevance" />
+            <input
+              type="radio"
+              value="High-to-low"
+              onclick="tosort()"
+              name="relevance"
+            />
           </div>
           <div>
             <label for="">Price: Low to High</label>
-            <input type="radio" name="relevance" />
+            <input
+              type="radio"
+              value="Low-to-high"
+              onclick="tosort()"
+              name="relevance"
+            />
           </div>
         </div>
 
