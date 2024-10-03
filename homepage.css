@@ -11,7 +11,6 @@ body{
 header{
     display: flex;
     flex-direction: column;
-
 }
 .top_header{
     display: flex;
@@ -164,10 +163,94 @@ h1{
     justify-content: space-evenly;
     align-items: center;
     margin: 20px 0px;
-    background-color: rgb(243, 244, 246);
 }
 .focus_on>img{
     width: 32%;
-    padding: 20px;
     border-radius: 18px;
+}
+
+.banner3{
+    margin: 20px 0;
+}
+.banner3>img{
+    width: 100%;
+}
+
+
+.luxe_container{
+    margin: 50px 0;
+}
+.luxe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.luxe>img{
+    width: 100%;
+}
+.luxe_card{
+    display: flex;
+    justify-content: space-around;
+}
+.luxe_card>img{
+    width: 30%;
+    border-radius: 18px;
+}
+.luxe>button{
+    color: white;
+    background-color: rgb(243, 65, 133);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+
+.glowup{
+    width: 100%;
+    margin: 20px auot;
+}
+.glowup>img{
+    width: 100%;
+}
+.glowup_card{
+    width: 98%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.glowup_card>img{
+    width: 18%;
+}
+.banner6{
+    margin: 20px 0;
+}
+.banner6>img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: pink;
+    /* background-size: cover;
+    background: url(Assests/footerbg.png); */
+    padding: 20px;
+}
+
+footer>ul>li{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-direction: column;
+}
+footer>ul>li>a{
+    text-decoration: none;
+    color: black;
 }
