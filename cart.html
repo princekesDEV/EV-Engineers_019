@@ -11,82 +11,94 @@
     <title>Nyka Cart Page</title>
   </head>
   <body>
-    <!-- Cart-Navbar -->
-    <div class="navbar">
-      <div class="nav-cart-company-logo">
-        <img src="./Assests/nykaa-logo.png" alt="nyka-logo" />
-      </div>
-      <div class="nav-cart-search-Box">
-        <input type="search" placeholder="Search New Products" />
-        <button class="nav-search-button">
-          <span class="material-symbols-outlined"> search </span>
-        </button>
-      </div>
-      <div class="nav-cart-content">
-        <ul class="nav-cart-items">
-          <span
-            class="material-symbols-outlined"
-            style="font-size: 38px; margin-right: 5px"
-          >
-            account_circle
-          </span>
-          <li>
-            <p>Hello,Neel</p>
-            <p style="font-weight: bold">Account & Lists</p>
-          </li>
-          <li>
-            <p>Returns</p>
-            <p style="font-weight: bold">& Orders</p>
-          </li>
-          <span
-            class="material-symbols-outlined"
-            style="font-size: 38px; margin-right: 1px"
-          >
-            shopping_cart
-          </span>
-          <li style="padding-top: 17px">
-            <p style="font-weight: bold">Cart</p>
-          </li>
-        </ul>
-      </div>
-    </div>
 
     <!-- Cart-Shopping -->
-    <div class="cart-product">
-      <h2>Cart Products</h2>
-      <p>Deselect all items</p>
-      <p>Price</p>
-      <hr />
 
-      <div class="cart-product-container">
-        <div class="cart-product-image">
-          <img src="./Assests/Products/product-13.png" alt="" />
+    <div class="cart-container">
+      <!-- Left Top Container   -->
+      <div class="left-top-container">
+        <h2>Cart Products</h2>
+        <p><a href="#">Deselect all items</a></p>
+        <p>Price</p>
+
+        <hr />
+
+        <div class="cart-product-container">
+          <div class="cart-product-image">
+            <img src="./Assests/Products/product-8.png" alt="" />
+          </div>
+
+          <div class="cart-product-content">
+            <h4>
+              TOPLOT Dresses for Women Knee Length with Floral
+              Print(Dress-5107-Lemon-L)
+            </h4>
+            <p>In Stock</p>
+            <p>Eligible for Free Shipping</p>
+
+            <div class="cart-product-content-gift-checkbox">
+              <input type="checkbox" id="gift" />
+              <label for="gift"
+                >This will be a gift <a href="#">Learn more</a></label
+              >
+            </div>
+            <p><span>Size</span>: M</p>
+            <p><span>Colour</span>: K40 Electric Black</p>
+            <div class="cart-product-content-footer">
+              <div class="card-product-quantity">
+                <select>
+                  <option value="Qty:1">Qty: 1</option>
+                  <option value="Qty:1">Qty: 0</option>
+                  <option value="Qty:1">Qty: 2</option>
+                  <option value="Qty:1">Qty: 3</option>
+                  <option value="Qty:1">Qty: 4</option>
+                  <option value="Qty:1">Qty: 5</option>
+                </select>
+              </div>
+              <p>delete</p>
+              <p>save for later</p>
+              <p>see more like this</p>
+              <p>share</p>
+            </div>
+          </div>
+
+          <div class="cart-product-price-container">
+            <p>70% off</p>
+            <p>Great Indian Festival</p>
+            <p>₹898.00</p>
+            <p>M.R.P: <span>₹2,999.00</span></p>
+          </div>
         </div>
 
-        <div class="cart-product-content">
-          <h4>
-            TOPLOT Dresses for Women Knee Length with Floral
-            Print(Dress-5107-Lemon-L)
-          </h4>
-          <p>In Stock</p>
-          <p>Eligible for Free Shipping</p>
-          <p>Colour:K40 Electric Black</p>
-          <div class="cart-product-content-footer"></div>
-        </div>
+        <hr />
 
-        <div class="cart-product-price-container">
-          <p>70% off</p>
-          <p>Great Indian Festival</p>
-          <p>₹898.00</p>
-          <p>M.R.P: ₹2,999.00</p>
+        <div class="cart-product-subtotal">
+          <p>SubTotal (2 items): <span>₹1,796.00</span></p>
         </div>
       </div>
 
-      <hr />
-
-      <div class="cart-product-subtotal">
-        <p>SubTotal (2 items): ₹1,256.00</p>
+      <!-- right Top Container   -->
+      
+      <div class="right-Top-container">
+          <div class="progressbar"></div>
+          <p><span>Your order is eligible for FREE Delivery.</span> <br>
+          Choose FREE Delivery option at checkout.</p>
+          <div class="">
+              <p>SubTotal (2 items): <span>₹1,796.00</span></p>
+          </div>
+          <button>Proceed to buy</button>
+              
+          </select>
       </div>
-    </div>
+
+      <!-- Left Bottom Container -->
+      <div class="left-bottom-container">
+
+      </div>
+      
+       <!-- right-bottom-container -->
+      <div class="right-bottom-container">
+
+      </div>
   </body>
 </html>
