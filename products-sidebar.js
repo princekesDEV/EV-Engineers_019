@@ -347,17 +347,26 @@ function addProductCards(bag) {
     price.innerText = `$${elem.price}`;
 
     let rating = document.createElement("p");
-    rating.innerText = `Rating: ${elem.rating.rate} (${elem.rating.count})`;
+    rating.innerText = `Rating: ${elem.rating.rate}`;
+    
+    let star = document.createElement("span");
+    star.innerHTML = '<i class="fa-solid fa-star"></i>';
+    rating.append(star);
+
+    let rating_count = document.createElement("span");
+    rating_count.innerText = ` (${elem.rating.count})`;
+
+    rating.append(rating_count);
 
     let button_fvrt_cont = document.createElement("div");
     button_fvrt_cont.classList.add("product-card-btn");
 
     let fvrt = document.createElement("div");
-    fvrt.classList.add("card-fvrt-btn")
+    fvrt.classList.add("card-fvrt-btn");
     fvrt.innerHTML = '<i class="fa-solid fa-heart"></i>';
 
     let add_to_cart_btn = document.createElement("div");
-    add_to_cart_btn.classList.add("card-add-to-cart-btn")
+    add_to_cart_btn.classList.add("card-add-to-cart-btn");
     add_to_cart_btn.innerText = "Add To Cart";
 
     document.querySelector("#products-cards").append(card);
