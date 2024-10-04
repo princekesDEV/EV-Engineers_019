@@ -90,6 +90,7 @@
 #products-cards > div {
   padding: 1rem 1rem 3rem 1rem;
   border: 1px solid rgb(200, 200, 200);
+  border-radius: 8px;
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   font-weight: 600;
