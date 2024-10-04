@@ -11,18 +11,18 @@ body {
 }
 
 /**********************************Left Top Container ******************************/
-.cart-container1 {
-  display: flex;
-  gap: 10px;
+.cart-container {
+  display: grid;
+  grid-template-columns: 75% 25%;
   margin: 0px 10px;
   margin-top: 100px;
+  gap: 10px;
 
 }
 
 .left-top-container {
   background-color: white;
   padding: 20px;
-  width: 75%;
 }
 
 .left-top-container > h2 {
@@ -233,8 +233,8 @@ body {
 .right-Top-container {
   background-color: #ffff;
   padding: 20px;
-  width: 25%;
-  border: 1px solid black;
+  height: 300px;
+ 
 }
 .progressbar {
   background-color: #067d62;
@@ -388,7 +388,8 @@ body {
 .right-bottom-container {
   background-color: #ffff;
   padding: 10px;
-  
+  position: relative;
+  top: -330px;
 }
 
 .right-bottom-container > h2 {
