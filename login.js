@@ -28,3 +28,4 @@ signupLink.onclick = () => {
 // Initially, set "Create Account" to be hidden and "Sign-In" to be visible
 signupText.style.display = "none";  // Hide "Create Account"
 loginText.style.display = "block";  // Show "Sign-In"
+// Done
