@@ -80,20 +80,50 @@
       <!-- right Top Container   -->
       
       <div class="right-Top-container">
-          <div class="progressbar"></div>
-          <p><span>Your order is eligible for FREE Delivery.</span> <br>
-          Choose FREE Delivery option at checkout.</p>
-          <div class="">
-              <p>SubTotal (2 items): <span>₹1,796.00</span></p>
+          <div style="display: flex; gap: 5px; align-items: center;">
+            <div class="progressbar"></div>
+            <p style="font-size: 16px;">₹499</p>
           </div>
-          <button>Proceed to buy</button>
-              
-          </select>
+         
+          <p>Your order is eligible for FREE Delivery</p>
+          <p>Choose <span style="color: skyblue;cursor: pointer;">FREE Delivery</span> option at checkout.</p>
+          <div class="right-subtotal">
+              <p>SubTotal (2 items): <span style="font-weight: bold;">₹1,796.00</span></p>
+              <input type="checkbox" id="gift">
+              <label for="gift">This order contains a gift</label>
+          </div>
+          <button class="right-top-button">Proceed to buy</button>
+          <div class="dropdown">
+            
+          <button class="dropbtn" onclick="myFunction()">Emi Available</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Bajaj Finance</a>
+            <a href="#home">Kotak Credit Card</a>
+            <a href="#home">Axis Credit Card</a>
+          </div>
+          </div>
       </div>
 
       <!-- Left Bottom Container -->
       <div class="left-bottom-container">
-
+        <h2>Your Items</h2>
+        <div class="left-bottom-button">
+          <button>No items saved for later</button>
+          <button>Buy it again</button>
+        </div>
+        <hr>
+        <div class="left-bottom-content">
+          <div class="left-bottom-content-img">
+            <img src="./Assests/Products/product-5.png" alt="">
+          </div>
+          <div class="left-bottom-content-describe">
+            <h3>Fitg18 Girl's Slim Fit Black Yoga Pants M</h3>
+            <p>In Stock</p>
+            <button>Add to Cart</button>
+          </div>
+          <h4>₹144.00</h4>
+        </div>
+        <hr>
       </div>
       
        <!-- right-bottom-container -->
@@ -101,4 +131,24 @@
 
       </div>
   </body>
+
+  <script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+
+  window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+  </script>
 </html>

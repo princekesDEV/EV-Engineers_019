@@ -10,63 +10,6 @@ body {
   background-color: rgb(122, 122, 122);
 }
 
-.navbar {
-  height: 70px;
-  width: 100%;
-  background-color: wheat;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* Nayka-cart-company-logo  */
-
-.nav-cart-company-logo img {
-  height: 35px;
-}
-
-/* Nav-cart-search-bar */
-.nav-cart-search-Box {
-  width: 540px;
-  background-color: white;
-}
-.nav-cart-search-Box input {
-  width: 500px;
-  height: 40px;
-  border: 0px;
-  outline: none;
-  padding-left: 15px;
-  position: relative;
-  background-color: white;
-  font-size: 18px;
-}
-
-.nav-search-button {
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  background-color: rgb(255, 237, 137);
-  outline: none;
-  border: 1px solid rgb(255, 237, 137);
-  cursor: pointer;
-}
-
-.nav-search-button span {
-  font-weight: bold;
-}
-
-/* Nav-content */
-
-.nav-cart-items {
-  display: flex;
-  position: relative;
-}
-
-.nav-cart-items li {
-  list-style-type: none;
-  padding-right: 15px;
-}
-
 /**********************************Left Top Container ******************************/
 .cart-container {
   display: grid;
@@ -293,22 +236,155 @@ body {
   top: 100px;
   padding: 20px;
 }
+.progressbar {
+  background-color: #067d62;
+  width: 80%;
+  height: 16px;
+  border-radius: 20px;
+}
 
-.right-Top-container > p:nth-child(1) {
-  background-color: rgb(14, 153, 223);
+.right-Top-container > p:nth-child(2) {
+  margin-top: 5px;
+  color: #067d62;
+  text-align: left;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.right-Top-container > p:nth-child(3) {
+  text-align: left;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.right-subtotal {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.right-subtotal > label {
+  font-size: 16px;
+}
+
+.right-top-button {
+  background-color: #d0fff4;
+  border: 1px solid #d0fff4;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 8px 0px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.right-top-button:hover {
+  background-color: #91f6de;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown > .dropbtn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  box-shadow: 1px 1px 5px #007185;
+}
+
+.show {
+  display: block;
 }
 /******************************* left-bottom-container *****************************/
 
 .left-bottom-container {
   background-color: #ffff;
-  height: 270px;
   margin-top: 30px;
+  padding: 25px;
 }
 
+.left-bottom-container > h2 {
+  margin-bottom: 20px;
+}
+
+.left-bottom-button {
+  margin-left: 40px;
+}
+
+.left-bottom-button > button {
+  background-color: transparent;
+  margin-right: 30px;
+  border: none;
+  cursor: pointer;
+  color: #007185;
+  padding-bottom: 5px;
+}
+
+.left-bottom-button > button:active {
+  border-bottom: 1px solid rgb(255, 187, 0);
+}
+
+.left-bottom-content {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.left-bottom-content-img {
+  width: 25%;
+}
+
+.left-bottom-content {
+  display: flex;
+}
+
+.left-bottom-content-describe {
+  width: 60%;
+}
+
+.left-bottom-content-describe > p {
+  color: #007600;
+  margin-top: 2px;
+}
+
+.left-bottom-content-describe > button{
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-top: 3px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.left-bottom-content-describe > button:hover{
+  background-color: rgb(231, 231, 231);
+}
+
+.left-bottom-content > h4{
+  color: #b12704;
+}
 /*****************************right-bottom-container *******************************/
 
 .right-bottom-container {
-  background-color: #ffff;
   height: 500px;
   position: relative;
   top: -70px;
