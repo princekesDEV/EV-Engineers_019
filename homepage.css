@@ -41,10 +41,12 @@ header{
 
 /* header-2 */
 nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 22px ;
+    padding-top: 5px;
     height: 60px;
     border-bottom: 1px solid rgb(204, 204, 204);
     position: fixed;
@@ -133,11 +135,15 @@ nav ul li a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 8rem 20px;
+    margin: 8rem 1rem;
+    margin-bottom: 2rem;
 }
 .home_cards>img{
     width: 32%;
     border-radius: 18px;
+}
+.homecard_banner{
+    display: none;
 }
 
 .banner1{
@@ -161,7 +167,7 @@ h1{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px 0px;
+    margin: auto 0px;
     background-color: rgb(243, 244, 246);
 }
 .top_Brand>img{
@@ -239,6 +245,7 @@ h1{
 .glowup_card>img{
     width: 18%;
 }
+
 .banner6{
     margin: 20px 0;
 }
@@ -246,23 +253,198 @@ h1{
     width: 100%;
 }
 
+
+/* FOOTER */
+.top_footer{
+    background: linear-gradient(45deg, rgb(179, 35, 86), rgb(197, 83, 106), rgb(212, 123, 128), rgb(226, 160, 150), rgb(238, 197, 172), rgb(247, 234, 195));
+    padding: 1rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+    font-size: 16px;
+}
+.top_footer > .home_email{
+    padding: 1rem;
+    /* align-items: center; */
+}
+.top_footer > .home_email>input{
+    background-color: bisque;
+    width: 70%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.top_footer > .home_email> button{
+    background-color: rgb(255, 0, 136);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.top_footer > .home_contact{
+    display: flex;
+    flex-direction: column;
+}
+.top_footer > .home_download{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
 footer{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    background-color: pink;
-    /* background-size: cover;
-    background: url(Assests/footerbg.png); */
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20231026/pngtree-pastel-pink-textured-background-with-abstract-watercolor-painting-image_13721736.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 20px;
 }
 
 footer>ul>li{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 30px;
     flex-direction: column;
 }
 footer>ul>li>a{
     text-decoration: none;
     color: black;
+}
+
+
+
+.footerpolicy{
+    box-sizing: border-box;
+    background-color: rgb(243, 244, 246);
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 1rem;
+    padding: 50px;
+}
+.policy_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(58, 58, 58);
+}
+.policy_cards>div{
+    padding: 0px 10px;
+}
+
+
+.media_cards{
+    margin: 0;
+    padding: 0.2rem 5rem;
+    box-sizing: border-box;
+    background-color: rgb(234, 234, 234);
+}
+
+.media_cards>h3{
+    text-align: center;
+;
+}
+.media_cards>div{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8rem;
+}
+
+
+
+.bottom_footer{
+    background-color: rgb(242, 65, 133);
+    color: white;
+    display: flex;justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+.bottom_footer>.left{
+    display: flex;
+    gap: 3rem;
+}
+
+.bottom_footer>.left>a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* media query */
+
+/* tablet view */
+@media screen and (max-width: 1024px) {
+    .bottom_footer{
+        justify-content: center;
+    }
+    .bottom_footer>.left{
+        display: none;
+    } 
+}
+
+
+/* mobile veiw */
+@media screen and (max-width: 768px) {
+    header{
+        width: 100%;
+    }
+    .top_header_feature{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        display: block;
+    }
+    .nav_left{
+        display: none;
+    }
+    .nav_right>input{
+        width: 100%;
+    }
+    .home_cards{
+        display: none;
+    }
+    .homecard_banner{
+        display: block;
+        width: 100%;
+        margin-top: 8rem;
+    }
+    .top_Brand{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .top_Brand>img{
+        width: 100%;
+        padding: 20px;
+        border-radius: 18px;
+    }
+    .top_footer{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    footer>ul{
+        margin-bottom: 0.2rem;
+    }
+    footer>ul>li>a{
+        display: none;
+    }
+    footer>ul>li>h2::after{
+        content: "⩔";
+        float: right;
+        margin-right: 4rem;
+    }
+    .footerpolicy{
+        display: none;
+    }
+    .media_cards{
+        display: none;
+    }
 }
