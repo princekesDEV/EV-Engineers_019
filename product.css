@@ -3,7 +3,7 @@
 #products-main {
   display: flex;
   gap: 3rem;
-  margin: 3rem 0.4rem 0rem 0.4rem;
+  margin: 8rem 0.4rem 0rem 0.4rem;
 }
 
 #products-sidebar {
