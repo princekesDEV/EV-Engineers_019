@@ -19,10 +19,6 @@ header{
     background: linear-gradient(to right, rgb(130, 7, 36), rgb(205, 56, 49));
     font-size: 18px;
     color: white;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: 3;
 }
 .top_header_feature{
     display: flex;
@@ -48,10 +44,6 @@ nav{
     padding: 0px 22px ;
     height: 60px;
     border-bottom: 1px solid rgb(204, 204, 204);
-    position: fixed;
-    top: 56px;
-    z-index: 3;
-    background-color: white;
 }
 nav ul{
     padding: 10px;
@@ -102,10 +94,6 @@ nav ul li a{
 /* header-3 */
 .bottom_header{
     border-bottom: 1px solid rgb(204, 204, 204);
-    position: relative;
-    top: 110px;
-    z-index: 2;
-
 }
 .bottom_header>ul>li{
     list-style-type: none;
@@ -134,7 +122,7 @@ nav ul li a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 8rem 20px;
+    margin: 20px;
 }
 .home_cards>img{
     width: 32%;
