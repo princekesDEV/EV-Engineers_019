@@ -1,5 +1,3 @@
-CSS
-
 *{
     box-sizing: border-box;
 }
@@ -23,17 +21,17 @@ header{
     background: linear-gradient(to right, rgb(130, 7, 36), rgb(205, 56, 49));
     font-size: 15px;
     color: white;
-    /* width: 90%; */
     position: fixed;
     top: 0;
     left: 0;right: 0;
     z-index: 3;
 }
-/* animation */
-.top_header> #offers{
+
+/* animation start*/
+.Offers{
     animation: blink 2s steps(40,end) infinite;
 }
-@keyframes blink {
+@keyframes blink{
     0%,100%{
         opacity: 1;
     }
@@ -41,11 +39,12 @@ header{
         opacity: 0;
     }
 }
+/* animation end*/
+
 .top_header_feature{
     display: flex;
     justify-content: space-between;
     gap: 25px;
-    
 }
 .top_header_feature>div{
     display: flex;
@@ -60,6 +59,7 @@ header{
 /* header-2 */
 
 nav{
+    height: 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,39 +71,37 @@ nav{
     z-index: 3;
     background-color: white;
 }
-
-.bottom_header_menu{
-    display: none;
+#menubar>li>img{
+    width: 100px;
 }
-  
-nav #menu li{
+
+.fa-bars{
+    display: none !important;
+}
+#menubar{
+    display: none;
     list-style-type: none;
+}
+#menubar li{
     display: flex;
-    gap: 3rem;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
     align-items: center;
 }
-nav #menu li a{
+#menubar li a{
+    padding: 10px;
+    font-weight: 600;
     text-decoration: none;
     color: black;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px;
 }
-.nav_left{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#menubar li a:hover{
+    transform: scale(1.1);
 }
-#menu{
-    display: flex;
-    gap: 15px;
-    align-items: center;
+.fa-bars{
+    cursor: pointer;
 }
-#menu >div>img{
-    width: 100px;
-
-}
-
 .nav_right{
     width: 40%;
     display: flex;
@@ -129,15 +127,16 @@ nav #menu li a{
     font-weight: 600;
     text-wrap: nowrap;
 }
+.nav_right > button:hover{
+    background-color: rgb(219, 2, 85);
+}
 
 /* header-3 */
 .bottom_header{
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid rgb(204, 204, 204);
-    position: relative;
-    top: 80px;
-    left: 0;right: 0;
+    margin-top: 5.5rem;
     z-index: 2;
     overflow:auto;
 }
@@ -154,18 +153,22 @@ nav #menu li a{
 .menu-dropdown-content > div{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .menu-dropdown-content > div> img{
   width: 100px;
   border-radius: 50%;
   background-color: rgb(243, 239, 239);
-
+}
+.menu-dropdown-content > div> img:hover{
+    transform: scale(1.1);
 }
 .menu-dropdown-content > div> a {
   text-decoration: none;
   font-size: 12px;
+  font-weight: 600;
+  text-align: end;
   color: rgb(106, 106, 106);
 }
 .menu-dropdown-content > button {
@@ -183,7 +186,7 @@ nav #menu li a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 7rem 1rem;
+    margin: 1rem;
     margin-bottom: 2rem;
 }
 .home_cards>img{
@@ -267,10 +270,11 @@ h1{
 }
 .luxe>button{
     color: white;
-    background-color: rgb(243, 65, 133);
+    background-color: rgb(130, 126, 126);
+    box-shadow: rgba(44, 44, 44, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border: none;
-    border-radius: 8px;
-    padding: 10px 30px;
+    border-radius: 20px;
+    padding: 10px 50px;
     font-size: 15px;
     font-weight: 600;
     text-wrap: nowrap;
@@ -289,7 +293,7 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
 }
 .glowup_card>img{
     width: 18%;
@@ -433,12 +437,6 @@ footer>ul>li>a{
     .bottom_footer>.left{
         display: none;
     } 
-    #menu{
-        gap: 2px;
-    }
-    nav #menu li{
-        gap: 8px;
-    }
 }   
 
 
@@ -456,11 +454,11 @@ footer>ul>li>a{
         justify-content:space-evenly;
     }
 
-    .nav_left{
+    /* .nav_left{
         display: none;
-    }
+    } */
     .nav_right{
-        width: 80%;
+        width: 100%;
         padding: 0.5rem;
     }
     .nav_right>input{
@@ -468,76 +466,38 @@ footer>ul>li>a{
     }
     .bottom_header_menu {
       color: rgb(255, 0, 140);
-      display: block;
-      -webkit-user-select: none;
-      user-select: none;
-    }
-  #menubar li a{
-    text-decoration: none;
-    color: #232323;
-    
-    transition: color 0.3s ease;
-  }
-  #menubar a:hover{
-    color: rgb(255, 0, 166);
-  }
-  .bottom_header_menu input{
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    
-    cursor: pointer;
-    
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-    
-    -webkit-touch-callout: none;
-   }
-   #menubar{
-     position: absolute;
-     width: 300px;
-     margin: -100px 0 0 -50px;
-     padding: 50px;
-     padding-top: 125px;
-    
-     background: #ededed;
-     list-style-type: none;
-     -webkit-font-smoothing: antialiased;
-     /* to stop flickering of text in safari */
-    
-     transform-origin: 0% 0%;
-     transform: translate(-100%, 0);
-    
-     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    }
-
-    #menubar li {
-      padding: 10px 0;
-      font-size: 22px;
-    }
-
-    /*
-     * And let's slide it in from the left
-     */
-    .bottom_header_menu input:checked ~ ul {
-      transform: none;
-    }
-    /* .bottom_header_menu.active + #menu > li {
-      display: block;
       display: flex;
-      flex-direction: column;
-    } */
-  
+      align-items: center;
+      justify-content: space-between;
+      width: 10%;
+    }
+    .bottom_header_menu:focus-within #menubar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        top: 35px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 999;
+    }
+    #menubar li a{
+       text-decoration: none;
+       color: #232323;
+       transition: color 0.3s ease;
+    }
+    .fa-bars{
+        display: block !important;
+        font-size: 24px;
+    }
     .home_cards{
         display: none;
     }
     .homecard_banner{
         display: block;
         width: 100%;
-        margin-top: 8rem;
+        margin-top: 1rem;
     }
     .top_Brand{
         display: grid;
@@ -572,5 +532,30 @@ footer>ul>li>a{
     }
     .media_cards{
         display: none;
+    }
+}
+
+
+/* mobile view */
+@media screen and (min-width: 768px){
+    /* .fa-bars{
+        display: none;
+    } */
+    
+    .nav_left, .nav_right{
+        display: flex;
+        align-items: center;
+    }
+    #menubar{
+        display: flex;
+        padding: 0;
+
+    }
+    #menubar li{
+        display: flex;
+        flex-direction: row;
+    }
+    #menubar li a{
+        margin-right: 20px;
     }
 }
