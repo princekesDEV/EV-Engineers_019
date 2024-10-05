@@ -72,7 +72,7 @@ nav ul li a{
 }
 .nav_left>ul>li>img{
     width: 9%;
-
+    cursor: pointer;
 }
 .nav_right{
     display: flex;
@@ -98,6 +98,7 @@ nav ul li a{
     font-size: 15px;
     font-weight: 600;
     text-wrap: nowrap;
+    cursor: pointer;
 }
 
 /* header-3 */
@@ -105,9 +106,13 @@ nav ul li a{
     border-bottom: 1px solid rgb(204, 204, 204);
     position: relative;
     top: 110px;
-    z-index: 2;
 
 }
+
+.bottom_header-menu{
+    display: none;
+}
+
 .bottom_header>ul>li{
     list-style-type: none;
     display: flex;
@@ -372,8 +377,6 @@ footer>ul>li>a{
     color: white;
 }
 
-
-
 /* media query */
 
 /* tablet view */
@@ -385,7 +388,6 @@ footer>ul>li>a{
         display: none;
     } 
 }
-
 
 /* mobile veiw */
 @media screen and (max-width: 768px) {
@@ -405,6 +407,33 @@ footer>ul>li>a{
     .nav_right>input{
         width: 100%;
     }
+    .bottom_header > ul > li{
+        flex-direction: column;
+        display: none;
+    }
+    .bottom_header-menu{
+        color: red;
+        display: block;
+        margin: 1rem 2rem;
+    }
+
+    .bottom_header-menu.active + .menu-dropdown-content > li{
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-dropdown-content>li > a{
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 0.3rem;
+        margin-left: -2rem;
+    }
+    .menu-dropdown-content>li > a:hover{
+        background-color: rgb(220, 200, 200);
+    }
+
     .home_cards{
         display: none;
     }
