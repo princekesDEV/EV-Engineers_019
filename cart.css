@@ -10,12 +10,69 @@ body {
   background-color: rgb(247, 246, 246);
 }
 
+/********************************* ****Navbar *************************************/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 22px ;
+  height: 60px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  z-index: 3;
+  background-color: white;
+}
+nav ul{
+  padding: 10px;
+  
+}
+nav ul li{
+  list-style-type: none;
+  align-items: center;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  margin-right: 22px ;
+}
+.nav_left>ul>li>img{
+  width: 9%;
+
+}
+.nav_right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+}
+.nav_right > input{
+  width: 250px;
+  background-color: rgb(236, 236, 236);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+.nav_right > button{
+  color: white;
+  background-color: rgb(243, 65, 133);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+
 /**********************************Left Top Container ******************************/
 .cart-container {
   display: grid;
   grid-template-columns: 75% 24.5%;
   margin: 0px 10px;
-  margin-top: 100px;
+  margin-bottom: 10px;
   gap: 10px;
 
 }
@@ -437,4 +494,27 @@ body {
   margin-top: 3px;
   border: 1px solid grey;
   cursor: pointer;
+}
+
+
+/* *********************************Footer ************************************** */
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: pink;
+  /* background-size: cover;
+  background: url(Assests/footerbg.png); */
+  padding: 20px;
+}
+
+footer>ul>li{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-direction: column;
+}
+footer>ul>li>a{
+  text-decoration: none;
+  color: black;
 }
