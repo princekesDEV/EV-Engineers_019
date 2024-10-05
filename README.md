@@ -49,30 +49,36 @@ Intuitive and interactive elements like hover effects, dropdowns, smooth scrolli
 
 
 ## design decisions or assumptions
-```bash
+
 # Responsive Design First
 Design Decision: Adopted a mobile-first approach to ensure the website is fully responsive and functions smoothly on all device sizes (mobile, tablet, and desktop).
+
 Assumption: Majority of users will access the site via mobile devices, so the design prioritizes mobile usability without compromising the desktop experience.
 
 # Minimal JavaScript for Core Functionality
 Design Decision: Utilized JavaScript only where necessary to enhance the interactivity of the site, such as enabling search, filtering, and dropdown menus, while keeping the overall codebase lightweight.
+
 Assumption: Users prefer fast load times and simple interactivity over complex animations or heavy use of JavaScript, particularly for e-commerce websites.
 
 # Static Frontend Without Backend Integration
 Design Decision: Developed the website as a static frontend project with no backend integration. All product data and functionality (e.g., product listing, cart operations) are hardcoded.
+
 Assumption: The website is intended as a front-end prototype for showcasing design and UI/UX, assuming that dynamic features and database integration could be added later if needed.
 # Intuitive Navigation and User Flow
 Design Decision: Created a minimalistic and easy-to-navigate layout, allowing users to find products and essential features (e.g., cart, search) without confusion.
+
 Assumption: Users expect a straightforward interface where navigation is intuitive and requires minimal clicks to reach their desired actions.
 
 # Consistent Branding and Visual Identity
 Design Decision: Followed a consistent visual theme with a clean, modern design using complementary colors, typography, and imagery suited to the beauty and wellness industry.
+
 Assumption: A polished and aesthetically appealing website will increase user engagement and build trust, aligning with users’ expectations of high-quality e-commerce brands.
 
 # Static Product Data for Demonstration
 Design Decision: Chose to hardcode product information and interactions for simplicity in this version of the project.
+
 Assumption: This design is suitable for demonstration purposes, assuming users will focus on the layout and interface rather than expecting real-time dynamic product data.
-```
+
 
 ## Usage
 
@@ -106,7 +112,9 @@ Once you are satisfied with your selections, proceed to checkout by clicking the
 <<<Screenshots>>>
 1. Homepage: This is the homepage where users can browse through featured products and navigate the website.
 
-<img src="./Assests/Homepage screenshot.png" alt="Homepage Screenshot"/>
+<img src="./Assests/Login_screenshot.png" alt="Login Screenshot"/>
+<img src="./Assests/homepage_screenshot1.png" alt="Desktop Homepage Screenshot"/>
+<img src="./Assests/homepage_screenshot2.png" alt="Mobile Homepage Screenshot"/>
 
 
 2. Product Details Page: Here, users can view detailed information about each product, including images, descriptions, and customer reviews.
