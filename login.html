@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-	  <div class="login-container">
-		<div class="login-page-logo">
-			<img src="./Assests/nykaa-logo.png" alt="nykaa-logo" class="logo">
-		</div>
+    <div class="login-container">
+      <div class="login-page-logo">
+        <img src="./Assests/nykaa-logo.png" alt="nykaa-logo" class="logo" />
+      </div>
       <div class="title-text">
         <div class="title login">Login</div>
         <div class="title signup">Create Account</div>
@@ -26,42 +26,79 @@
         <div class="form-inner">
           <form action="#" class="login">
             <div class="field">
-              <p>Email Address</p> <!-- Paragraph before the input -->
-              <input type="text" placeholder="Enter your email" required />
+              <p>Email Address</p>
+              <!-- Paragraph before the input -->
+              <input
+                type="text"
+                placeholder="Enter your email"
+                required
+                id="login-email"
+              />
             </div>
             <div class="field">
-              <p>Password</p> <!-- Paragraph before the input -->
-              <input type="password" placeholder="Enter your password" required />
+              <p>Password</p>
+              <!-- Paragraph before the input -->
+              <input
+                type="password"
+                placeholder="Enter your password"
+                required
+                id="login-password"
+              />
             </div>
-			<br>
+            <br />
             <div class="pass-link"><a href="#">Forgot password?</a></div>
             <div class="field btn">
               <div class="btn-layer"></div>
-              <input type="submit" value="Login" />
+              <input type="submit" value="Login" id="login-submit" />
             </div>
             <div class="signup-link">
-              Want to create account?<br> <a href="">Signup here</a>
+              Want to create account?<br />
+              <a href="">Signup here</a>
             </div>
           </form>
           <form action="#" class="signup">
             <div class="field">
-              <p>Name</p> <!-- Paragraph before the input -->
-              <input type="text" placeholder="Enter your name" required />
+              <p>Name</p>
+              <!-- Paragraph before the input -->
+              <input
+                type="text"
+                placeholder="Enter your name"
+                required
+                id="signup-name"
+              />
             </div>
             <div class="field">
-              <p>Email Address</p> <!-- Paragraph before the input -->
-              <input type="text" placeholder="Enter your email" required />
+              <p>Email Address</p>
+              <!-- Paragraph before the input -->
+              <input
+                type="text"
+                placeholder="Enter your email"
+                required
+                id="signup-email"
+              />
             </div>
             <div class="field">
-              <p>Password</p> <!-- Paragraph before the input -->
-              <input type="password" placeholder="Enter your password" required />
-            </div><br>
+              <p>Password</p>
+              <!-- Paragraph before the input -->
+              <input
+                type="password"
+                placeholder="Enter your password"
+                required
+                id="signup-password"
+              />
+            </div>
+            <br />
             <div class="field btn">
               <div class="btn-layer"></div>
-              <input type="submit" value="Signup" />
+              <input
+                type="submit"
+                value="Signup"
+                id="signup-submit"
+              />
             </div>
             <div class="signup-link">
-              Already have an account?<br> <a href="">Login now</a>
+              Already have an account?<br />
+              <a href="">Login now</a>
             </div>
           </form>
         </div>
@@ -71,4 +108,3 @@
   <script src="login.js"></script>
   <!-- Done -->
 </html>
-
