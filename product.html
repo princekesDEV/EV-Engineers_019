@@ -35,8 +35,12 @@
         <div class="nav_left">
           <ul>
             <li>
-              <img src="Assests/nykaa-logo.png" alt="Naykaa Logo" />
-              <a href="#">Categories</a>
+              <img
+                src="Assests/nykaa-logo.png"
+                alt="Naykaa Logo"
+                onclick="window.location.href = './homepage.html'"
+              />
+              <a href="./product.html">Categories</a>
               <a href="#">Brands</a>
               <a href="#">Luxe</a>
               <a href="#">Naykaa Fashion</a>
@@ -48,17 +52,22 @@
           <input
             type="text"
             placeholder="Search on Naykaa"
-            id="navbar-search"
             oninput="search()"
+            id="navbar-search"
           />
-          <button>Sign In</button>
-          <a href="#"
+          <button onclick="window.location.href = './login.html'">
+            Sign In
+          </button>
+          <a href="./cart.html"
             ><i class="fa-solid fa-cart-shopping" style="color: black"></i
           ></a>
         </div>
       </nav>
       <div class="bottom_header">
-        <ul>
+        <div class="bottom_header-menu" onclick="navbar_menu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="menu-dropdown-content">
           <li>
             <a href="#">Makeup</a>
             <a href="#">Skin</a>
