@@ -68,6 +68,14 @@ function origin_country() {
   dropdown.classList.toggle("active");
 }
 
+function navbar_menu() {
+  let menu = document.querySelector(".bottom_header-menu");
+  let content = document.querySelector(".menu-dropdown-content");
+  console.log(menu);
+
+  menu.classList.toggle("active");
+}
+
 let bag = [
   {
     id: 1,
