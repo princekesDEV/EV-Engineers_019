@@ -87,7 +87,7 @@ function filladdress() {
   var area = document.getElementById("area").value;
   var house = document.getElementById("house").value;
   var pin = document.getElementById("pin").value;
-  if (name === "" || pin === "" || number.length > 10) {
+  if (name === "" || pin === "" || number.length < 10) {
     alert("please fill the correct details");
     return;
   }

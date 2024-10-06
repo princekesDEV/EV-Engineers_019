@@ -46,7 +46,7 @@ signupButton.addEventListener("click", () => {
 
   login_details.push(obj);
   localStorage.setItem("signup_details", JSON.stringify(login_details));
-  window.location.href = "./homepage.html";
+  window.location.href = "./index.html";
   alert("Signup Successfull");
 });
 
@@ -57,7 +57,7 @@ loginButton.addEventListener("click", () => {
 
   login_details.forEach((elem) => {
     if (elem.signup_email == login_email && elem.signup_pass == login_pass) {
-      window.location.href = "./homepage.html";
+      window.location.href = "./index.html";
       return alert("Login Success \nRedirecting");
     } else {
       return alert("Incorrect Crendtials");

@@ -179,40 +179,39 @@ input {
   display: inline-block;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1090px){
-  #select-way{
+@media screen and (min-width: 768px) and (max-width: 1090px) {
+  #select-way {
     flex-direction: column;
     gap: 90px;
   }
-  #select-app{
+  #select-app {
     flex-direction: column;
   }
-  #select-app > div{
+  #select-app > div {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .card2{
+  .card2 {
     width: 150%;
   }
-  .card1{
+  .card1 {
     width: 150%;
   }
 }
 
-
-@media screen and (max-width: 767px){
-  #select-way{
+@media screen and (max-width: 767px) {
+  #select-way {
     flex-direction: column;
     gap: 90px;
   }
 
-  .card2{
+  .card2 {
     width: 150%;
   }
-  .card1{
+  .card1 {
     width: 150%;
   }
 }

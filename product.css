@@ -115,7 +115,7 @@
   margin-bottom: 0.4rem;
 }
 
-#products-cards span:nth-child(2){
+#products-cards span:nth-child(2) {
   color: gray;
   font-size: 12px;
 }

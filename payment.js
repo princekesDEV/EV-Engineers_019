@@ -5,31 +5,33 @@ function check() {
   var expiry = document.getElementById("card-expiry").value;
   var cvv = document.getElementById("cvv").value;
   var upi = document.getElementById("upinum").value;
-  if (cardnum.length !== 16) {
+  if (cardnum.length != 16) {
     alert("please fill 16 digit card number");
     return;
   }
-  if (expiry.length !== 5) {
+  if (expiry.length != 5) {
     alert("please fill corroct expiry date");
     return;
   }
-  if (cvv.length !== 3 || cvv === "") {
+  if (cvv.length != 3 || cvv == "") {
     alert("please fill corroct cvv");
     return;
   }
 
-  window.location.href = "otp.html";
+  alert("Order On the way");
+  window.location.href = "index.html";
 }
 document.querySelector(".paynow1").addEventListener("click", check1);
 
 function check1() {
   var upi = document.getElementById("upinum").value;
-  if (upi !== "8209633900@oksbi") {
+  if (upi == "") {
     alert("plese fill correct upi id");
     return;
   }
 
-  window.location.href = "otp.html";
+  alert("Order On the way");
+  window.location.href = "index.html";
 }
 document.querySelector(".upi-way").addEventListener("click", showupi);
 
