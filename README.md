@@ -119,7 +119,7 @@ Once you are satisfied with your selections, proceed to checkout by clicking the
 
 2. Product Details Page: Here, users can view detailed information about each product, including images, descriptions, and customer reviews.
 
-<img src="" alt="Product Screenshot"  />
+<img src="./Assests/Product_screenshot.jpg" alt="Product Screenshot"  />
 
 
 3. Shopping Cart: This is the shopping cart view where users can see their selected products and proceed to checkout.
@@ -139,10 +139,11 @@ If your application relies on external APIs, document them and include any neces
 In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
 GET /api/items - retrieve all items
 POST /api/items - create a new item
-
+-->
 
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.
+- HTML
+- CSS
+- Java Script
 
-- Node.js
-- Other libraries/modules -->
