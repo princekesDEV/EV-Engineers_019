@@ -7,14 +7,13 @@ The Naykaa E-commerce website is a highly responsive and visually engaging platf
 Frontend 
 
 ## Deplolyed App
-Frontend: https://deployed-site.whatever
+Frontend: https://glistening-gingersnap-7dec72.netlify.app/
 
 ## Directory Structure
-Naykaa/
-├─ frontend/
-│  ├─ ...
-
-
+EV-ENGINEERS/
+├─ Assests
+| ├─ Products
+| ...
 ## Video Walkthrough of the project
 [Attach your video walkthrough link here] Duration: 1 - 3 minutes
 
@@ -85,7 +84,7 @@ Assumption: This design is suitable for demonstration purposes, assuming users w
 To use the Naykaa E-commerce website, follow these steps:
 
 1) Visit the Website
-Navigate to the deployed app using the link provided: https://deployed-site.whatever.
+Navigate to the deployed app using the link provided: https://glistening-gingersnap-7dec72.netlify.app/
 This will take you to the homepage where you can browse available products and use various features of the website.
 
 2) Browse Products
@@ -98,7 +97,7 @@ Click on any product to view detailed information, including price, description,
 After reviewing a product, click the "Add to Cart" button to add the item to your shopping cart. You can view and modify your cart by clicking the cart icon at the top right of the page.
 
 5) Proceed to Checkout
-Once you are satisfied with your selections, proceed to checkout by clicking the "Checkout" button in your cart. Follow the steps to complete your order.
+Once you are satisfied with your selections, proceed to checkout by clicking the "Proceed to Buy" button in your cart. Follow the steps to complete your order.
 
 ```bash
 # Step-by-Step Example of Adding a Product to Cart and Checking Out
