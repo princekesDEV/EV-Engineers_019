@@ -146,5 +146,7 @@ List and provide a brief overview of the technologies used in the project.
 - CSS
 - Java Script
 
-Deployed Link: https://glistening-gingersnap-7dec72.netlify.app/
-GitHub Link: https://github.com/princekesDEV/EV-Engineers_019/tree/main
+# Links
+
+- Deployed Link: https://glistening-gingersnap-7dec72.netlify.app/
+- GitHub Link: https://github.com/princekesDEV/EV-Engineers_019/tree/main
