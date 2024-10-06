@@ -9,7 +9,6 @@ body {
 #nav {
   display: flex;
   gap: 13%;
-
   padding: 17px;
   border-bottom: 1px solid gray;
 }
@@ -20,7 +19,7 @@ body {
 #addres_nav,
 #payment {
   display: flex;
-  width: 9%;
+  width: 10%;
   justify-content: space-between;
   align-items: center;
 }
@@ -69,7 +68,6 @@ body {
 .upi-way {
   height: 50px;
   padding: 15px 25px;
-
   background-color: rgb(220, 220, 220);
 }
 
@@ -81,11 +79,11 @@ body {
   justify-content: space-between;
 }
 input {
-  width: 100%;
-  height: 40px;
-  margin-top: 10px;
+  width: 84%;
+  margin: 10px;
   border: 1px solid gray;
   border-radius: 7px;
+  padding: 20px;
 }
 .card > div > input {
   width: 45%;
@@ -113,7 +111,6 @@ input {
   margin-bottom: 10px;
 }
 .img1 {
-  /* background-color: #e11c1c; */
   text-align: center;
   width: 60%;
   height: 54%;
@@ -167,6 +164,7 @@ input {
 }
 .card2 {
   display: none;
+  width: 100%;
 }
 .card-way1 {
   background-color: rgb(220, 220, 220);
@@ -179,4 +177,42 @@ input {
 }
 .card22 {
   display: inline-block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1090px){
+  #select-way{
+    flex-direction: column;
+    gap: 90px;
+  }
+  #select-app{
+    flex-direction: column;
+  }
+  #select-app > div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card2{
+    width: 150%;
+  }
+  .card1{
+    width: 150%;
+  }
+}
+
+
+@media screen and (max-width: 767px){
+  #select-way{
+    flex-direction: column;
+    gap: 90px;
+  }
+
+  .card2{
+    width: 150%;
+  }
+  .card1{
+    width: 150%;
+  }
 }
