@@ -105,7 +105,7 @@ Once you are satisfied with your selections, proceed to checkout by clicking the
 1. Open the homepage.
 2. Search for "Jeans" in the search bar.
 3. Choose a product from the search results and click "Add to Cart."
-4. Go to the cart and click "Checkout."
+4. Go to the cart and click "Proceed to Buy."
 5. Complete the purchase by filling in the required information.
 
 ```
