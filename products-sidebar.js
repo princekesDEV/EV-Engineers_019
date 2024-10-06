@@ -68,6 +68,14 @@ function origin_country() {
   dropdown.classList.toggle("active");
 }
 
+function navbar_menu() {
+  let menu = document.querySelector(".bottom_header-menu");
+  let content = document.querySelector(".menu-dropdown-content");
+  console.log(menu);
+
+  menu.classList.toggle("active");
+}
+
 let bag = [
   {
     id: 1,
@@ -332,6 +340,8 @@ let bag = [
   },
 ];
 
+let cart_arr = JSON.parse(localStorage.getItem("cart_products")) || [];
+
 function addProductCards(bag) {
   document.querySelector("#products-cards").innerHTML = "";
   bag.forEach((elem) => {
@@ -367,6 +377,9 @@ function addProductCards(bag) {
     fvrt.innerHTML = '<i class="fa-solid fa-heart"></i>';
 
     let add_to_cart_btn = document.createElement("div");
+    add_to_cart_btn.addEventListener("click", () => {
+      addToCart(cart_arr, elem.id, elem);
+    });
     add_to_cart_btn.classList.add("card-add-to-cart-btn");
     add_to_cart_btn.innerText = "Add To Cart";
 
@@ -397,6 +410,17 @@ function search() {
   });
 
   addProductCards(new_data);
+}
+
+function addToCart(arr, id_num, elem) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].id == id_num) {
+      return alert("Item Already Added to cart");
+    }
+  }
+
+  cart_arr.push(elem);
+  localStorage.setItem("cart_products", JSON.stringify(cart_arr));
 }
 
 addProductCards(bag);

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 html,
 body {
@@ -17,8 +17,20 @@ body {
   background: #1a75ff;
   color: #fff;
 }
+
+.login-page-logo {
+  text-align: center; /* Center the logo */
+  margin-bottom: 20px; /* Space below the logo */
+  border-bottom: #c80563 solid 2px;
+}
+
+.login-page-logo .logo {
+  width: 150px; /* Set the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* Default for desktop and larger screens */
-.wrapper {
+.login-container {
   overflow: hidden;
   max-width: 390px; /* Default width */
   background: #fff;
@@ -30,30 +42,31 @@ body {
 
 /* For tablets (768px to 1024px) */
 @media (max-width: 1024px) {
-  .wrapper {
+  .login-container {
     max-width: 350px; /* Adjusted for tablet screens */
   }
 }
 
 /* For mobile devices (less than 768px) */
 @media (max-width: 768px) {
-  .wrapper {
+  .login-container {
     max-width: 350px; /* Adjusted for mobile screens */
   }
 }
 
-.wrapper .title-text {
+.login-container .title-text {
   display: flex;
   width: 200%;
 }
-.wrapper .title {
+.login-container .title {
   width: 50%;
   font-size: 35px;
   font-weight: 600;
+  color: #c80563;
   text-align: center;
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .slide-controls {
+.login-container .slide-controls {
   position: relative;
   display: flex;
   height: 50px;
@@ -89,7 +102,7 @@ body {
   background: -webkit-linear-gradient(left, #d40368, #c80563, #b00959, #c80563);
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-input[type='radio'] {
+input[type="radio"] {
   display: none;
 }
 #signup:checked ~ .slider-tab {
@@ -110,10 +123,19 @@ input[type='radio'] {
   cursor: default;
   user-select: none;
 }
-.wrapper .form-container {
+.login-container .form-container {
   width: 100%;
   overflow: hidden;
 }
+.field p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 0px;
+  margin-top: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
 .form-container .form-inner {
   display: flex;
   width: 200%;
@@ -121,6 +143,7 @@ input[type='radio'] {
 .form-container .form-inner form {
   width: 50%;
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  margin-top: -10px !important;
 }
 .form-inner form .field {
   height: 50px;
@@ -138,6 +161,7 @@ input[type='radio'] {
   font-size: 17px;
   transition: all 0.3s ease;
 }
+
 .form-inner form .field input:focus {
   border-color: #b00959;
   /* box-shadow: inset 0 0 3px #fb6aae; */
@@ -147,7 +171,7 @@ input[type='radio'] {
   transition: all 0.3s ease;
 }
 form .field input:focus::placeholder {
-  color: #1a75ff;
+  color: #c80563;
 }
 .form-inner form .pass-link {
   margin-top: 5px;
@@ -180,12 +204,11 @@ form .btn .btn-layer {
   background: -webkit-linear-gradient(left, #d40368, #c80563, #b00959, #c80563);
   border-radius: 8px;
   transition: all 0.4s ease;
-
 }
 form .btn:hover .btn-layer {
   left: 0;
 }
-form .btn input[type='submit'] {
+form .btn input[type="submit"] {
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -200,3 +223,4 @@ form .btn input[type='submit'] {
 
   cursor: pointer;
 }
+/* Done */

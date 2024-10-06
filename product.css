@@ -3,7 +3,7 @@
 #products-main {
   display: flex;
   gap: 3rem;
-  margin: 8rem 0.4rem 0rem 0.4rem;
+  margin: 2rem 0.4rem 0rem 0.4rem;
 }
 
 #products-sidebar {
@@ -90,6 +90,7 @@
 #products-cards > div {
   padding: 1rem 1rem 3rem 1rem;
   border: 1px solid rgb(200, 200, 200);
+  border-radius: 8px;
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   font-weight: 600;
@@ -114,7 +115,7 @@
   margin-bottom: 0.4rem;
 }
 
-#products-cards span:nth-child(2){
+#products-cards span:nth-child(2) {
   color: gray;
   font-size: 12px;
 }
@@ -159,7 +160,7 @@
 
 @media screen and (min-width: 1483px) {
   #products-cards {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

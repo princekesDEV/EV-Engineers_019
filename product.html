@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
     <link rel="stylesheet" href="product.css" />
-    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      href="//images-static.naikaa.com/media/wysiwyg/uiTools/2024-3/beauty.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- header with 3 sub-parts -->
     <header>
       <div class="top_header">
-        <p>Festive Deals Await! Shop From Our Durga Pujo Sale Now!</p>
+        <p class="Offers">
+          Festive Deals Await! Shop From Our Durga Pujo Sale Now!
+        </p>
         <div class="top_header_feature">
           <div>
             <i class="fa-solid fa-mobile-screen"></i>
@@ -31,48 +38,104 @@
           </div>
         </div>
       </div>
+
       <nav>
-        <div class="nav_left">
-          <ul>
+        <div class="bottom_header_menu" tabindex="0">
+          <i class="fa-solid fa-bars fa-lg"></i>
+
+          <ul id="menubar">
             <li>
-              <img src="Assests/nykaa-logo.png" alt="Naykaa Logo" />
-              <a href="#">Categories</a>
+              <img
+                src="Assests/nykaa-logo.png"
+                alt="Nykaa Logo"
+                onclick="window.location.href = './index.html'"
+              />
+              <a href="product.html">Products</a>
               <a href="#">Brands</a>
               <a href="#">Luxe</a>
-              <a href="#">Naykaa Fashion</a>
-              <a href="#">Beauty Advice</a>
+              <a href="#">Trends</a>
+              <a href="team.html">Team</a>
             </li>
           </ul>
         </div>
+
         <div class="nav_right">
           <input
             type="text"
-            placeholder="Search on Naykaa"
+            placeholder="Search on Nykaa"
             id="navbar-search"
             oninput="search()"
           />
-          <button>Sign In</button>
-          <a href="#"
+          <button onclick="window.location.href = './login.html'">
+            Sign In
+          </button>
+          <a href="cart.html"
             ><i class="fa-solid fa-cart-shopping" style="color: black"></i
           ></a>
         </div>
       </nav>
+
       <div class="bottom_header">
-        <ul>
-          <li>
+        <ul class="menu-dropdown-content">
+          <div>
+            <img
+              style="margin-top: 20%"
+              src="Assests/Bottom_nav1.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              style="margin-top: 9%; width: 150px"
+              src="Assests/1makeup.jpg"
+              alt=""
+            />
             <a href="#">Makeup</a>
+          </div>
+          <div>
+            <img style="margin-top: 10px" src="Assests/2skincare.png" alt="" />
             <a href="#">Skin</a>
+          </div>
+          <div>
+            <img
+              style="height: 100px; margin-top: 5px"
+              src="Assests/3hair.png"
+              alt=""
+            />
             <a href="#">Hair</a>
+          </div>
+          <div>
+            <img src="Assests/4appliances.jpeg" alt="" />
             <a href="#">Appliances</a>
+          </div>
+          <div>
+            <img src="Assests/5bodycare.png" alt="" />
             <a href="#">Bath & Body</a>
+          </div>
+          <div>
+            <img src="Assests/6natural.jpeg" alt="" />
             <a href="#">Natural</a>
+          </div>
+          <div>
+            <img style="margin-top: 10px" src="Assests/7mom&baby.png" alt="" />
             <a href="#">Mom & Baby</a>
+          </div>
+          <div>
+            <img src="Assests/8wellness.jpeg" alt="" />
             <a href="#">Health & Wellness</a>
+          </div>
+          <div>
+            <img src="Assests/9mens.png" alt="" />
             <a href="#">Men</a>
-            <a href="#">Fragrance</a>
-            <a href="#">Lingerie & Accessories</a>
-            <button>Sale</button>
-          </li>
+          </div>
+          <div>
+            <img src="Assests/10women.png" alt="" />
+            <a href="#">Women</a>
+          </div>
+          <div>
+            <img src="Assests/footwear.png" alt="" />
+            <a href="#">Footewear</a>
+          </div>
         </ul>
       </div>
     </header>
