@@ -1,4 +1,8 @@
 # EV-Engineers_019
+Construct Week Project Using HTML , CSS and JavaScript.
+
+# Project Title
+Naykaa E-commerce Website
 
 ## Introduction
 
@@ -13,22 +17,41 @@ Frontend
 Frontend: https://glistening-gingersnap-7dec72.netlify.app/
 
 ## Directory Structure
-
-EV-ENGINEERS/
+```bash
+EV-ENGINEERS_019/
 ├─ Assests
 | ├─ Products
-| ...
+│ ├─ ...images
+├─ address.css
+├─ address.html
+├─ address.js
+├─ cart.css
+├─ cart.html
+├─ index.css
+├─ index.html
+├─ login.css
+├─ login.html
+├─ login.js
+├─ payment.css
+├─ payment.html
+├─ payment.js
+├─ product.css
+├─ product.html
+├─ products-sidebar.js
+├─ README.md
+├─ team.css
+├─ team.html
+
+```
 
 ## Video Walkthrough of the project
 
-[Attach your video walkthrough link here] Duration: 1 - 3 minutes
-
+Presentation video link : https://www.youtube.com/watch?v=L1pRn4CnWrU
 A visual tour through the key features and the overall shopping flow of the website.
 
 ## Video Walkthrough of the codebase
 
-[Attach your codebase walkthrough link here] Duration: 1 - 5 minutes
-
+Questionnaires video link : https://www.youtube.com/watch?v=NXfdqGKVR3M
 An overview of the project's architecture, focusing on how HTML, CSS, and JavaScript are structured to bring dynamic elements and responsiveness to the site.
 
 ## Features
@@ -54,39 +77,39 @@ An overview of the project's architecture, focusing on how HTML, CSS, and JavaSc
 7. Interactive UI:
    Intuitive and interactive elements like hover effects, dropdowns, smooth scrolling, dynamic content loading and dropdown menus enhance the overall shopping experience.
 
-## design decisions or assumptions
+## Design, Decisions or Assumptions
 
-# Responsive Design First
+1) Responsive Design First
 
 Design Decision: Adopted a mobile-first approach to ensure the website is fully responsive and functions smoothly on all device sizes (mobile, tablet, and desktop).
 
 Assumption: Majority of users will access the site via mobile devices, so the design prioritizes mobile usability without compromising the desktop experience.
 
-# Minimal JavaScript for Core Functionality
+2) Minimal JavaScript for Core Functionality
 
 Design Decision: Utilized JavaScript only where necessary to enhance the interactivity of the site, such as enabling search, filtering, and dropdown menus, while keeping the overall codebase lightweight.
 
 Assumption: Users prefer fast load times and simple interactivity over complex animations or heavy use of JavaScript, particularly for e-commerce websites.
 
-# Static Frontend Without Backend Integration
+3) Static Frontend Without Backend Integration
 
 Design Decision: Developed the website as a static frontend project with no backend integration. All product data and functionality (e.g., product listing, cart operations) are hardcoded.
 
 Assumption: The website is intended as a front-end prototype for showcasing design and UI/UX, assuming that dynamic features and database integration could be added later if needed.
 
-# Intuitive Navigation and User Flow
+4) Intuitive Navigation and User Flow
 
 Design Decision: Created a minimalistic and easy-to-navigate layout, allowing users to find products and essential features (e.g., cart, search) without confusion.
 
 Assumption: Users expect a straightforward interface where navigation is intuitive and requires minimal clicks to reach their desired actions.
 
-# Consistent Branding and Visual Identity
+5) Consistent Branding and Visual Identity
 
 Design Decision: Followed a consistent visual theme with a clean, modern design using complementary colors, typography, and imagery suited to the beauty and wellness industry.
 
 Assumption: A polished and aesthetically appealing website will increase user engagement and build trust, aligning with users’ expectations of high-quality e-commerce brands.
 
-# Static Product Data for Demonstration
+6) Static Product Data for Demonstration
 
 Design Decision: Chose to hardcode product information and interactions for simplicity in this version of the project.
 
@@ -97,7 +120,7 @@ Assumption: This design is suitable for demonstration purposes, assuming users w
 To use the Naykaa E-commerce website, follow these steps:
 
 1. Visit the Website
-   Navigate to the deployed app using the link provided: https://glistening-gingersnap-7dec72.netlify.app/
+   Navigate to the deployed app using the link provided: https://glistening-gingersnap-7dec72.netlify.app/ 
    This will take you to the homepage where you can browse available products and use various features of the website.
 
 2. Browse Products
@@ -138,24 +161,10 @@ To use the Naykaa E-commerce website, follow these steps:
 
 <img src="./Assests/cart screenshot.png" alt="Cart Screenshot" />
 
-<!--
-## Credentials
-user id -
-password -
-
-## APIs Used
-If your application relies on external APIs, document them and include any necessary links or references.
-
-## API Endpoints
-In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
-GET /api/items - retrieve all items
-POST /api/items - create a new item
--->
 
 ## Technology Stack
 
-List and provide a brief overview of the technologies used in the project.
-
+List of the technologies used in the project :
 - HTML
 - CSS
 - Java Script
@@ -163,4 +172,4 @@ List and provide a brief overview of the technologies used in the project.
 ### Links
 
 - Deployed Link: https://glistening-gingersnap-7dec72.netlify.app/
-- GitHub Link: https://github.com/princekesDEV/EV-Engineers_019/tree/main
+
