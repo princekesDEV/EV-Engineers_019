@@ -138,7 +138,7 @@ To use the Naykaa E-commerce website, follow these steps:
 ```bash
 # Step-by-Step Example of Adding a Product to Cart and Checking Out
 1. Open the homepage.
-2. Search for "Jeans" in the search bar.
+2. Search for "Womens" in the search bar.
 3. Choose a product from the search results and click "Add to Cart."
 4. Go to the cart and click "Proceed to Buy."
 5. Complete the purchase by filling in the required information.
